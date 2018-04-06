@@ -92,6 +92,11 @@
 - `git merge branchToMerge` this command merge branch that we want to merge into current branch if the actual branch and branchToMerge have not conflicts between they, this is a Fast Forward, that means is not necessary to do anything special. 
 - `git branch -d branchToDelete` This command delete branch that you want
 - `git checkout -b branchToCreateAndToMove` This command create new branch and move HEAD to this new branch
+## Tags
+- `git tag` shows us all tags.
+- `git tag TagToCreate` This command add new tag in repo
+- `git tag -d TagToDelete` This command delete tag 
+- `git tag -a vXXX -m "Message you want to add"` this command add a version and message, the version system is your choice
 
 
 
