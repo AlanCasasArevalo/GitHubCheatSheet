@@ -19,13 +19,19 @@
 # We are ready to start to work with git locally and remotely 
 
 ## To show stage area status:
-- `git status`
+- `git status` This command shows you all your files into stage area
+- `git status -s` This command shows you all your files into stage area, with short information
 
 ## To add files to stage area we could use commands:
-- `git add .` This command add all your files or folders into stage area
+- `git add .` This command add all your files and folders into stage area
+- `git add --all` This command add all your files and folders into stage area
+- `git add -A` This command add all your files and folders into stage area
+- `git add *.extensionToAdd` This command add all your files with specific extension in your folder into stage area
+- `git add "*.extensionToAdd"` This command add all your files with specific extension stage area
 - `git add FileToAdd` This command add specific file into stage area
 - `git add FileToAdd FileToAdd` This command add specific file or files into stage area
 - `git add folderToAdd/` This command add specific folder into stage area
+- `git add folderToAdd/*.extensionToAdd` This command add specific extension folder into stage area
 - `git add folderToAdd/ folderToAdd/` This command add specific folder or folders into stage area
 
 ## To commit when we want to, we could use commands:
@@ -59,14 +65,33 @@
 ## To delete files or folders 
 - `git rm "FileToDelete"` this command delete the file from stage area but to delete if necessary to commit
 
+## To update files or folders
+- `git add -u` This file update our file or folder but you have to commit if you want really update in repository
+
 ## To show before commits
 - `git log` this command shows you before commits and you could move into them with HASHLOG
+- `git log --oneline` this command shows you short description of before commits, and you could move into them with HASHLOG
+- `git log --oneline --decorate --all --graph` this command shows you short description of before commits, and you could move into them with HASHLOG
 
-This is an example of hash commit
+- `git reglog` his command shows you before commits and you could move into them with HASHLOG in all times
+
+## This is an example of hash commit
+
 ![](https://github.com/AlanCasasArevalo/GitHubCheatSheet/blob/master/commit-hash.png)
 
+## To create global alias:
+- `git config --global alias.lg "log --oneline --decorate --all --graph"` this command create an alias file alias.* and when we want to call ***git log --oneline --decorate --all --graph*** command we just to write `git lg`
 
+## To know changes:
+- `git diff` This command shows us changes between before eat 😜    for example 
+- `git diff --staged` This command shows us changes between before go home 😜    for example 
 
+## Branchs
+- `git branch branchToCreate` This command create a new branch to work, and work do it in that branch is independent of master branch
+- `git diff branchFromCheck branchToCheck` This command shows us difference between 2 branchs.
+- `git merge branchToMerge` this command merge branch that we want to merge into current branch if the actual branch and branchToMerge have not conflicts between they, this is a Fast Forward, that means is not necessary to do anything special. 
+- `git branch -d branchToDelete` This command delete branch that you want
+- `git checkout -b branchToCreateAndToMove` This command create new branch and move HEAD to this new branch
 
 
 
