@@ -62,6 +62,9 @@
 ## To show before commits
 - `git log` this command shows you before commits and you could move into them with HASHLOG
 
+This is an example of hash commit
+![](https://github.com/AlanCasasArevalo/GitHubCheatSheet/blob/master/commit-hash.png)
+
 
 
 
