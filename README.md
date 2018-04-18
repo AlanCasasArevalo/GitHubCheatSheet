@@ -102,12 +102,31 @@
 
 - `git stash list` this command give us a stash list if there has any stash and we can navigate between HASHLOG
 
+- `git stash list --stat` this command gives us more information about stash list
+
+- `git show stash` this command shows us much more information about all changes in that list of temporal work
+
+- `git show stash@{3}` this command shows us much more information about the expecificated stash 
+
 - `git stash pop` This command recover the temporal work into your branch, you can create other branch and to put this temporal work into it 
 
-- `git stash drop` This command remove the temporal work.
+- `git stash apply` This command takes the stash that we want and apply all work
 
+- `git stash apply stash@{12}` This command takes the stash that we want to take this command needs the stash that you want to take from list of stash,  
 
+- `git stash drop` This command remove the temporal work. This command just delete the first entrance 
 
+- `git stash drop stash@{12}` This command remove the temporal work. This command delete the stash that we expecificated with the stash@{} 
+
+- `git stash save` This command save changes, it's similar to git stash
+
+- `git stash save --keep-index` this command save temporal work without stage area files, because this files are ready to be commited 
+
+- `git stash save --include-untracked` this command add to temporal work including files or folder that git does not give follow
+
+- `git stash save "Commit to this stash"` this command permit us to "commit" our stash to be more clear when we will want to search it 
+
+- `git stash clear` this command delete all stash this command is DANGER because if you do it you will not be able to recover temporal works.
 
 
 
