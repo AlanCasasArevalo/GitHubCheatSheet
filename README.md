@@ -37,16 +37,14 @@
 ## To commit when we want to, we could use commands:
 - `git commit -m "Message to commit"`
 - `git commit` This command open your default editor to write your custom commit
+- `git commit -am "Message to commit"` This command add all your files to stage area and commit the changes into your default editor. 
+
+- `git commit -am` This command add all your files to stage area and commit the changes
 
 ## To change a wrong commit you could do:
 - `git commit --amend -m "Message to commit"` this commit just modify message commit anything else
 
 - `git commit --amend` This command open your default editor to write your custom commit, this commit just modify message commit anything else
-
-- `git commit -am "Message to commit"` This command add all your files to stage area and commit the changes into your default editor. 
-
-- `git commit -am` This command add all your files to stage area and commit the changes
-
 
 ## To reset your work
 - `git -- .` this command reset all work to before state, include if you delete all your work into trash
@@ -97,6 +95,23 @@
 - `git tag TagToCreate` This command add new tag in repo
 - `git tag -d TagToDelete` This command delete tag 
 - `git tag -a vXXX -m "Message you want to add"` this command add a version and message, the version system is your choice
+- `git tag -a vXXX (HASHLOG) -m "Message you want to add"` this command add a version in
+
+## Stash
+- `git stash` This command permit us to put in a temporally repo space, and whe can move to other branch and do something, when we finished our branch task, then to continue with this work what is in temporally space repo. This stash has a HASHLOG and we can see stash if we use `git log`.
+
+- `git stash list` this command give us a stash list if there has any stash and we can navigate between HASHLOG
+
+- `git stash pop` This command recover the temporal work into your branch, you can create other branch and to put this temporal work into it 
+
+- `git stash drop` This command remove the temporal work.
+
+
+
+
+
+
+
 
 
 
